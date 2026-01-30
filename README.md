@@ -32,6 +32,10 @@ The Employee Tenure Predictor analyzes HR data to estimate the probability that 
 	```
 3. **Open your browser** to the provided local URL to use the app.
 
+    ```bash
+	https://andie-andrews.streamlit.app/
+	```
+
 ## Usage
 
 Enter employee details (satisfaction, evaluation, projects, hours, tenure, accident, promotion) in the app. The model will output the probability of turnover and assign a risk zone:
