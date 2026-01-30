@@ -16,8 +16,11 @@ evaluation = st.slider("Last Evaluation Score", 0.0, 1.0, 0.5)
 projects = st.number_input("Number of Projects", 1, 10, 3)
 hours = st.number_input("Average Monthly Hours", 80, 320, 160)
 tenure = st.number_input("Years at Company", 1, 10, 3)
-accident = st.selectbox("Work Accident", [0, 1])
-promotion = st.selectbox("Promotion in Last 5 Years", [0, 1])
+accident_label = st.selectbox("Work Accident", ["No", "Yes"])
+promotion_label = st.selectbox("Promotion in Last 5 Years", ["No", "Yes"])
+
+accident = 1 if accident_label == "Yes" else 0
+promotion = 1 if promotion_label == "Yes" else 0
 
 # Build input dict
 input_data = {
